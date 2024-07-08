@@ -1,0 +1,2064 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Baloo Bhaijaan 2", sans-serif; */
+    font-family: "Poppins", sans-serif;
+
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+
+}
+html, body {
+    overflow-x: hidden; /* Right-left scrolling ko eliminate karne ke liye */
+}
+
+section{
+    padding: 5px;
+    margin-top: 50px;
+}
+.main-heading {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 38px;
+
+}
+
+:root {
+    --primary-color: ##f5f5f5;
+    /* --secondary-color: #2ecc71;
+    --accent-color: #e74c3c;
+    --text-color: #333;
+    --background-color: #f4f4f4; */
+}
+
+   /* ---------- navbatr ----------- */
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 1px 4px hsl(0 4% 15% / 10%);
+    z-index: 100;
+}
+ .container-fluid{
+    padding: 0px 84px;
+}
+.navbar .container-fluid a img{
+    width: 50%;
+}
+.collapse {
+    justify-content: end;
+}
+
+.collapse ul li  {
+    padding: 0px 14px;
+}
+.nav-link:hover:hover  {
+    border-bottom: #f59500 !important;
+    transition: 0.5s !important;
+    color: #f59500 !important;
+}
+
+.collapse ul li a {
+    font-size: 20px;
+
+}
+
+.more-icons{
+    display: flex;
+    margin-left: 160px;
+}
+.more-icons ul li {
+    padding: 0px 23px;
+}
+
+/* .container-fluid form input{
+    width: 18% !important;
+} */
+
+.container-fluid {
+    height: 11vh;
+}
+
+
+  /* ---- cart box ------ */
+
+  .cart{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 360px;
+    min-height: 100vh;
+    background-color: rgb(148, 147, 147);
+    box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+    transition: 0.3s;
+  }
+
+  /* active box  */
+.cart.active{
+   right: 0;
+}
+
+
+
+
+
+.cart-title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    
+}
+
+.cart-img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+.detail-box{
+    display: grid;
+    row-gap: 0.5rem;
+}
+.cart-product-title{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.cart-price{
+    font-weight: 500;
+}
+.cart-quantity{
+    border: 1px solid black;
+    outline-color: #f59500;
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.cart-remove{
+    font-size: 24px;
+    color: chocolate;
+    cursor: pointer;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid black;
+}
+
+.total-title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.total-price{
+    margin-left: 0.5rem;
+}
+
+.btn-buy{
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background-color: #f59500;
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.btn-buy:hover{
+    background-color: white;
+}
+
+#close-cart{
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+}
+
+   /* ---------- hero section ------------ */
+
+   .carousel {
+    position: relative;
+    /* top: 73px; */
+    margin-top: 60px;
+}
+
+
+   .hero-content {
+    position: relative;
+    bottom: 650px;
+    left: 160px;
+    width: 35%;
+   }
+   .hero-content h5{
+    font-size: 24px;
+    font-weight: 500;
+}
+   .hero-content h1{
+    font-size: 50px;
+    font-weight: 800;
+   }
+   .hero-content p{
+    font-size: 17px;
+    letter-spacing: 3px;
+    font-weight: 400;
+    color: gray;
+   }
+   .hero-content .btn {
+    background-color: #f9a629;
+    padding: 5px 34px;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+
+   .hero-content2 {
+    position: relative;
+    bottom: 490px;
+    width: 40%;
+    left: 422px;
+    text-align: center;
+   }
+   .hero-content2 h1{
+    font-size: 45px;
+    font-weight: 800;
+   }
+   .hero-content2 p{
+    font-size: 50px;
+    font-weight: 200;
+    letter-spacing: 6px;
+}
+   .hero-content2 span{
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 200;
+    color: gray;
+    position: relative;
+    top: -16px;
+   }
+   .hero-content2 .btn {
+    background-color: #f9a629;
+    padding: 5px 34px;
+    font-size: 17px;
+    font-weight: 800;
+    margin-top: 12px;
+}
+
+
+.hero-content3 {
+    position: relative;
+    bottom: 350px;
+    left: 135px;
+    max-width: 45%;
+   }
+   .hero-content3 h1{
+    font-size: 77px;
+    font-weight: 300;
+   }
+ 
+   .hero-content3 .btn {
+    background-color: #f9a629;
+    padding: 7px 35px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+
+/* customer info  */
+
+.customer-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(179px, auto));
+    gap: 1.5rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.box-item {
+    position: relative;
+    box-shadow: 0px 0px 4px 1px black;
+    padding: 35px 20px;
+    /* left: 67px; */
+    /* border: none; */
+    width: 25vw;
+}
+.box-item:hover{
+   background-color: #f9a629;
+    transition: 0.8s;
+}
+
+.box-item a{
+    font-size: 3rem;
+
+}
+.box-item h2{
+    font-size: 23px;
+
+}
+.box-item p{
+    font-size: 13px;
+    color: gray;
+}
+
+
+
+
+
+
+
+
+
+ /* --------- new products section------------ */
+
+ .newArrivals{
+    content: "";
+    background: url(./assets/arrival-bg\ office.png);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+ }
+
+ .newArrivals .newAriContent{
+    width: 50%;
+ }
+ .newArrivals .newAriContent h1{
+    font-size: 75px;
+    font-weight: 700;
+}
+ .newArrivals .newAriContent p{
+    font-size: 19px;
+    color: gray;
+}
+ .newArrivals .newAriContent .arriBtn{
+    padding: 6px 24px;
+    font-size: 21px;
+    font-weight: 500;
+    border-radius: 8px;
+    background-color: #ff920a;
+    color: white;
+    border: none;
+}
+ /* --------- featured products section------------ */
+
+
+.star-rating {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+ } 
+
+.star {
+    font-size: 50px;
+    color: black;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.star:hover, .star.active {
+    color: yellow;
+} 
+
+
+    /* ------------- product new box -------- */
+
+
+.shop-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(220px, auto)); */
+    gap: 1.5rem;
+}
+.product-box{
+    position: relative;
+    box-shadow: 0px 0px 4px 1px black;
+    padding: 3px 9px;
+}
+.product-box:hover{
+    padding: 10px;
+    border: 1px solid black;
+    transition: 0.8s;
+}
+.product-img-container {
+    width: 100%;
+    height: 200px; /* Fixed height for the image container */
+    overflow: hidden; /* Ensures the image does not overflow the container */
+}
+.product-img{
+    /* width: 100%;
+   
+    margin-bottom: 0.5rem; */
+    
+    /* height: 75%; */
+    width: 100%;
+    height: 300px; 
+    margin-bottom: 1.5rem;
+    object-fit: cover; 
+    
+}
+.product-title{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem 0;
+}
+.product-text {
+    margin: 0.5rem 0;
+}
+.price{
+    font-weight: 500;
+}
+.add-cart{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #f59500;
+    padding: 10px;
+    cursor: pointer;
+
+}
+.add-cart:hover{
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    /* -------- sales box ----------- */
+/* .salesBox {
+     text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    margin: 25px;
+} */
+.salesBox .imgcontent{
+    content: "";
+    background: url(./assets/fashion-look-white-bold-lines-260nw-594736502.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.salesBox .imgcontent h1{
+    font-size: 55px;
+    text-shadow: 2px 6px 1px black;
+}
+.salesBox .imgcontent h1 span{
+    color: #ff4900;
+
+}
+.salesBox .imgcontent .salesbtn{
+    padding: 10px 21px;
+    font-size: 21px;
+    font-weight: 500;
+    border-radius: 7px;
+}
+.salesBox .imgcontent .salesbtn:hover{
+   background-color: #ff4900;
+   transition: all 0.9s;
+}
+
+
+
+/* .testimonial h1{
+   text-align: center;
+   font-size: 70px;
+   font-weight: 700;
+} */
+.testimonial .center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carousel-testimonial{
+    width: 80%;
+    /* background-color: aquamarine; */
+}
+.carousel-item{
+    /* background-color: rgb(253, 247, 219); */
+    width: 100%;
+    height: 80vh;
+}
+
+
+.slide-content{
+    position: absolute;
+    bottom: 7px;
+    color: black;
+
+}
+
+.slide-content h5{
+   font-size: 3rem;
+}
+.slide-content span{
+    color: gray;
+}
+
+.slide-content p{
+    font-size: 20px;
+    /* color: #f5dcdc; */
+}
+.sliderImg{
+    width: 19%;
+    height: 23vh;
+    border-radius: 50%;
+    padding: 0px;
+    margin: 35px;
+}
+
+.slideArrow i{
+    color: #f59500;
+    font-size: 3rem;
+}
+
+.carousel-control-prev{
+    left: 150px;
+}
+.carousel-control-next{
+    right: 150px;
+}
+/* .slideArrowIconLeft{
+    
+}
+.slideArrowIconRight{
+    
+} */
+
+  /* --------- mail box ---------- */
+
+  .mailbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .mailbox .colm {
+    background-color: #d4ced0;
+   
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 44vh;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    display: grid;
+}
+.mailContent p {
+    font-size: 16px;
+}
+.mailInputbox {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: stretch; */
+    /* width: 64%; */
+    /* padding: 85px; */
+}
+.mailContent h2{
+  font-size: 1.7rem;
+  font-weight: 800;
+}
+/* .mailbox .colm{
+    background-color: #d4ced0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 44vh;
+  } */
+
+  /* .mailContent {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+   
+    padding: 47px;
+}
+  .mailContent p{
+    font-size: 18px;
+  }
+
+  .mailInputbox{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 50%;
+    
+    padding: 85px;
+
+  } */
+  .mailInputbox input{
+    padding: 12px 40px;
+
+
+  }
+  
+  .mailInputbox .mailbtn{
+    padding: 0px 10px;
+    font-size: 25px;
+  }
+
+
+  /* ------------- contact box ------------------ */
+
+
+  .contact-container .col-2 ul li a{
+    color: black;
+  }
+
+.contact-container .row{
+    justify-content: center;
+    flex-wrap: wrap;
+    /* width: 20%; */
+    gap: 70px;
+}
+
+.store-about .contact-img img{
+    width: 60%;
+}
+.store-about .contact-img p{
+    margin-bottom: 24px;
+    margin-top: 24px;
+    font-size: 16px;
+}
+
+/* .store-about .contact-icons{
+    
+} */
+.store-about .contact-icons ul{
+    gap: 20px;
+    margin-top: 18px;
+}
+.store-about .contact-icons ul li a{
+      font-size: 20px;
+}
+
+
+.quick-links h5{
+    font-size: 25px;
+    font-weight: 500;
+}
+.quick-links ul li a{
+    font-size: 17px;
+    text-decoration: none;
+    transition: 0.3s color ease-out;
+    line-height: 43px;
+}
+
+.help h5{
+    font-size: 25px;
+    font-weight: 500;
+}
+.help ul li a{
+    font-size: 17px;
+    text-decoration: none;
+    transition: 0.3s color ease-out;
+    line-height: 43px;
+}
+
+
+.info-box h5{
+    font-size: 25px;
+    font-weight: 500;
+}
+.info-box .info-content li span{
+    font-size: 14px;
+    color: gray;    
+}
+.info-box .info-content li{
+    font-size: 16px;
+    font-weight: 500;
+    list-style-type: none;
+    transition: 0.3s color ease-out;
+    line-height: 35px;
+}
+
+iframe {
+    border: 0;
+    width: 23vw;
+    height: 40vh;
+}
+
+footer{
+    background: #d4ced0;
+}
+
+
+footer .center {
+    text-align: center;
+    margin: 25px 0px;
+}
+
+
+
+
+
+@media (max-width: 1440px) {
+   
+    .itemsec .item {
+        width: 10;
+        height: 30vh;
+    }
+}
+@media (max-width: 1250px) {
+
+    /* navbar  */
+    .collapse ul li  {
+        padding: 0px 6px;
+    }
+    .collapse ul li a {
+        font-size: 17px;
+    
+    }
+   
+    /* Hero section */
+    
+   .hero-content {
+    position: relative;
+    bottom: 585px;
+    width: 35%;
+   }
+   .hero-content h5{
+    font-size: 21px;
+    font-weight: 500;
+}
+   .hero-content h1{
+    font-size: 44px;
+    font-weight: 800;
+   }
+   .hero-content p{
+    font-size: 14px;
+   
+    font-weight: 400;
+   
+   }
+   .hero-content .btn {
+    font-size: 14px;
+    font-weight: 800;
+}
+/*  hero part 2 */
+    
+   .hero-content2 {
+    position: relative;
+    bottom: 462px;
+    width: 44%;
+    left: 349px;
+    text-align: center;
+   }
+   .hero-content2 h1{
+    font-size: 40px;
+    font-weight: 800;
+   }
+   .hero-content2 p{
+    font-size: 47px;
+    font-weight: 200;
+    letter-spacing: 6px;
+}
+   .hero-content2 span{
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-weight: 200;
+    color: gray;
+    position: relative;
+    top: -16px;
+   }
+   .hero-content2 .btn {
+    background-color: #f9a629;
+    padding: 5px 34px;
+    font-size: 17px;
+    font-weight: 800;
+    margin-top: 12px;
+}
+
+/*  testimonial */
+.slide-content h5 {
+    font-size: 3rem;
+}
+.slide-content span {
+    font-size: 16px;
+    color: gray;
+}
+.slide-content p {
+    font-size: 18px;
+    
+}
+
+
+
+}
+
+@media (max-width: 1024px) {
+
+    /* navbar  */
+    .collapse ul li  {
+        padding: 0px 4px;
+    }
+   /*  hero section */
+   .hero-content {
+    position: relative;
+    bottom: 450px;
+    left: 97px;
+    width: 35%;
+}
+.hero-content h1 {
+    font-size: 35px;
+}
+.hero-content p {
+    font-size: 10px;
+}
+.hero-content .btn {
+    font-size: 12px;
+    font-weight: 800;
+}
+
+/*  hero part2 */
+.hero-content2 {
+    position: relative;
+    bottom: 360px;
+    width: 40%;
+    left: 299px;
+    text-align: center;
+}
+.hero-content2 h1 {
+    font-size: 35px;
+    font-weight: 800;
+}
+.hero-content2 p {
+    font-size: 40px;
+    font-weight: 200;
+    letter-spacing: 6px;
+}
+.hero-content2 span {
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: 200;
+    color: gray;
+    position: relative;
+    top: -16px;
+}
+.hero-content2 .btn {
+    background-color: #f9a629;
+    padding: 4px 28px;
+    font-size: 14px;
+    font-weight: 800;
+    margin-top: 12px;
+}
+/* hero part 3 */
+.carousel-item .img3{
+    height: 80vh;
+        
+    }
+.hero-content3 {
+    position: relative;
+    bottom: 289px;
+    left: 68px;
+    max-width: 51%;
+}
+.hero-content3 h1 {
+    font-size: 66px;
+    font-weight: 300;
+}
+
+/* new arrivales */
+.newArrivals .newAriContent h1{
+    font-size: 54px;
+    font-weight: 700;
+}
+ .newArrivals .newAriContent p{
+    font-size: 12px;
+    color: gray;
+}
+ .newArrivals .newAriContent .arriBtn{
+    padding: 6px 24px;
+    font-size: 14px;
+    
+}
+
+/* testimonial  */
+.sliderImg {
+    width: 19%;
+    height: 21vh;
+   
+}
+.slide-content p {
+    font-size: 16px;
+}
+
+/*  mail box */
+.mailContent h2 {
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+.mailContent p {
+    font-size: 13px;
+}
+.mailInputbox input {
+    padding: 9px 21px;
+}
+.mailInputbox .mailbtn {
+    padding: 0px 10px;
+    font-size: 20px;
+}
+
+
+/*   footer   */
+.store-about .contact-img p {
+    margin-bottom: 24px;
+    margin-top: 24px;
+    font-size: 13px;
+}
+.contact-container .row .col-2 h5 {
+        font-size: 17px;
+        font-weight: 700;
+
+}
+.contact-container .row .col-2 ul li a {
+    font-size: 13px;
+    
+    line-height: 38px;
+}
+.info-box .info-content li {
+    font-size: 10px;
+    font-weight: 900;
+    
+}
+.info-box .info-content li span {
+    font-size: 9px;
+    color: gray;
+}
+iframe {
+    border: 0;
+    width: 21vw;
+    height: 38vh;
+}
+
+
+
+
+
+}
+
+@media (max-width: 992px) {
+    /* navbar */
+    .navbar .container-fluid a img{
+        width: 40%;
+    }
+    .collapse {
+        background: bisque;
+        background-color: rgba(255, 255, 255, 0.7) !important;
+        /* background-color: rgba(0, 0, 0, 0.5) !important; */
+        position: absolute;
+        width: 100%;
+        height: 75vh;
+        top: 68px;
+        left: 0px;
+        padding: 9px;
+        text-align: center;
+    }
+    .collapse {
+        background: bisque;
+        position: absolute;
+        width: 100%;
+        height: 80vh;
+        top: 57px;
+        left: 0px;
+        text-align: center;
+    }
+    .navbar-nav{
+        text-align: center;
+    }
+    .more-icons {
+        display: flex;
+        margin-left: 9px;
+        gap: 19px;
+        /* padding: 3px 6px; */
+        justify-content: center;
+    }
+
+        .hero-content3 h1 {
+        font-size: 64px;
+        font-weight: 300;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .main-heading {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 800;
+        margin-bottom: 38px;
+    }
+
+    /* hero section */
+    .hero-content {
+        position: relative;
+        bottom: 320px;
+        left: 79px;
+        width: 35%;
+    }
+    .hero-content h5 {
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .hero-content h1 {
+        font-size: 28px;
+    }
+    .hero-content p {
+        font-size: 7px;
+        font-weight: 700;
+    }
+    .hero-content .btn {
+        font-size: 12px;
+    }
+/*  hero part 2 */
+.hero-content2 {
+    position: relative;
+    bottom: 242px;
+    width: 40%;
+    left: 227px;
+    text-align: center;
+}
+.hero-content2 h1 {
+    font-size: 27px;
+    font-weight: 800;
+}
+.hero-content2 p {
+    font-size: 25px;
+    font-weight: 200;
+    letter-spacing: 6px;
+}
+.hero-content2 span {
+    font-size: 9px;
+    letter-spacing: 3px;
+    font-weight: 200;
+    color: gray;
+    position: relative;
+    top: -16px;
+}
+.hero-content2 .btn {
+    background-color: #f9a629;
+    padding: 4px 28px;
+    font-size: 10px;
+    font-weight: 800;
+    margin-top: 12px;
+}
+.hero-content3 h1 {
+    font-size: 50px;
+    font-weight: 300;
+}
+/*  hero part 2 */
+.carousel-item .img2{
+height: 80vh;
+    object-fit: cover;
+}
+
+/*  hero part 3 */
+   
+.carousel-item .img3{
+height: 80vh;
+    object-fit: cover;
+}
+
+.hero-content3 .btn {
+    background-color: #f9a629;
+    padding: 6px 26px;
+    font-size: 17px;
+    font-weight: 800;
+}
+   
+/*  costumer info */
+.newArrivals .newAriContent {
+    width: 45%;
+}
+.newArrivals .newAriContent h1 {
+    font-size: 39px;
+    font-weight: 700;
+}
+.newArrivals .newAriContent p {
+    font-size: 11px;
+    color: gray;
+}
+.newArrivals .newAriContent .arriBtn {
+    padding: 4px 19px;
+    font-size: 11px;
+}
+
+
+/* sales box */
+.salesBox .imgcontent h1 {
+    font-size: 42px;
+    text-shadow: 2px 6px 1px black;
+}
+.salesBox .imgcontent .salesbtn {
+    padding: 5px 18px;
+    font-size: 19px;
+    font-weight: 500;
+    border-radius: 7px;
+}
+
+/*  testimonial */
+.carousel-caption{
+    display: block !important;
+}
+.carousel-item {
+    /* background-color: rgb(253, 247, 219); */
+    width: 100%;
+    height: 68vh;
+}
+.sliderImg {
+    width: 26%;
+    height: 20vh;
+}
+
+.slide-content h5 {
+    font-size: 1.8rem;
+}
+.slide-content span {
+    font-size: 15px;
+    color: gray;
+}
+.slide-content p {
+    font-size: 13px;
+}
+
+
+.slideArrow i {
+    color: #f59500;
+    font-size: 2rem;
+}
+
+
+/*  mail box */
+.mailContent h2 {
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+.mailContent p {
+    font-size: 10px;
+}
+.mailInputbox input {
+    padding: 4px 2px;
+}
+.mailInputbox .mailbtn {
+    padding: 0px 9px;
+    font-size: 14px;
+}
+
+/*  footer */
+.col-2 {
+    flex: 0 0 auto;
+    width: 38.666667%;
+}
+
+.store-about .contact-img img {
+    width: 53%;
+}
+.store-about .contact-img p {
+    margin-bottom: 19px;
+    margin-top: 24px;
+    font-size: 11px;
+}
+
+.contact-container .row .col-2 ul li a {
+    font-size: 13px;
+    line-height: 27px;
+}
+.contact-icons h4{
+    
+        font-size: 20px;
+    
+}
+
+iframe {
+    border: 0;
+    width: 32vw;
+    height: 33vh;
+}
+
+
+
+}
+
+@media (max-width: 561px){
+
+    .navbar>.container-fluid {
+        display: flex !important;
+        /* flex-direction: column; */
+        flex-wrap: nowrap !important;
+        align-items: center;
+        justify-content: center;
+    }
+    .container-fluid {
+        padding: 0px 16px;
+        height: 8vh;
+
+    }
+    /* hero section */
+    
+    .carousel-item .img1{
+        left: -309px;
+        position: relative;
+        width: 175vw !important;
+        height: 80vh;
+    }
+    .hero-content {
+        position: relative;
+        bottom: 185px;
+        text-align: center;
+        left: 83px;
+        width: 66%;
+    }
+    .hero-content h5 {
+        font-size: 11px;
+        font-weight: 500;
+    }
+    .hero-content h1 {
+        font-size: 22px;
+    }
+    .hero-content p {
+        font-size: 8px;
+        font-weight: 400;
+    }
+    .hero-content .btn {
+        font-size: 10px;
+        padding: 0px 12px;
+    }
+
+
+    /* costumer info */
+    .customer-info {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(289px, auto));
+        gap: 1.5rem;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+    .box-item {
+        position: relative;
+        box-shadow: 0px 0px 4px 1px black;
+        padding: 35px 20px;
+        /* left: 67px; */
+        /* border: none; */
+        width: 70vw;
+    }
+/* testimonial */
+.sliderImg {
+    width: 29%;
+    height: 17vh;
+}
+.slide-content p {
+    font-size: 12px;
+}
+.carousel-control-prev {
+    left: 65px;
+}
+.carousel-control-next {
+    right: 65px;
+}
+}
+@media (max-width: 450px){
+    .main-heading {
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-bottom: 38px;
+    }
+
+    .navbar>.container-fluid {
+        display: flex !important;
+        /* flex-direction: column; */
+        flex-wrap: nowrap !important;
+        align-items: center;
+        justify-content: center;
+    }
+    .container-fluid {
+        padding: 0px 16px;
+        height: 8vh;
+
+    }
+    /* hero section */
+    
+    .carousel-item .img1{
+        left: -309px;
+        position: relative;
+        width: 175vw !important;
+        height: 80vh;
+        object-fit: none;
+    }
+    .hero-content {
+        position: relative;
+        bottom: 185px;
+        text-align: center;
+        left: 83px;
+        width: 66%;
+    }
+    .hero-content h5 {
+        font-size: 11px;
+        font-weight: 500;
+    }
+    .hero-content h1 {
+        font-size: 22px;
+    }
+    .hero-content p {
+        font-size: 8px;
+        font-weight: 400;
+    }
+    .hero-content .btn {
+        font-size: 10px;
+        padding: 0px 12px;
+    }
+
+    /* hero part2 */
+    .carousel-item .img2 {
+        left: -234px;
+        position: relative;
+        width: 160vw !important;
+        height: 80vh;
+        object-fit: cover;
+    }
+    
+.hero-content2 {
+    position: relative;
+    bottom: 277px;
+    width: 50%;
+    left: 27px;
+    text-align: center;
+}
+.hero-content2 h1 {
+    font-size: 20px;
+    font-weight: 800;
+}
+.hero-content2 p {
+    font-size: 17px;
+    font-weight: 200;
+    letter-spacing: 6px;
+}
+
+.hero-content2 span {
+    font-size: 6px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    color: gray;
+    position: relative;
+    top: -11px;
+}
+.hero-content2 .btn {
+    background-color: #f9a629;
+    padding: 4px 28px;
+    font-size: 10px;
+    font-weight: 800;
+    margin-top: 12px;
+}
+/* hero part 3 */
+.carousel-item .img3 {
+    left: -172px;
+    
+}
+.hero-content3 {
+    position: relative;
+    bottom: 289px;
+    left: 34px;
+    max-width: 51%;
+}
+.hero-content3 h1 {
+    font-size: 37px;
+    font-weight: 300;
+}
+.hero-content3 .btn {
+    background-color: #f9a629;
+    padding: 4px 16px;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+/*  customer info */
+.customer-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, auto));
+    gap: 1.5rem;
+    
+}
+
+/*  new arrivale */
+.newArrivals .newAriContent {
+    width: 45%;
+}
+.newArrivals{
+    
+    position: relative;
+    left: -215px;
+    width: 160vw;
+    height: 100vh;
+
+    
+ }
+ .newArrivals .newAriContent {
+    width: 33%;
+    position: relative;
+    right: 58px;
+    top: -10px;
+}
+.newArrivals .newAriContent h1 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.newArrivals .newAriContent p {
+    font-size: 10px;
+    color: gray;
+}
+.newArrivals .newAriContent .arriBtn {
+    padding: 5px 20px;
+    font-size: 9px;
+}
+/*  sales box */
+.salesBox .imgcontent h1 {
+    font-size: 27px;
+    text-shadow: 2px 6px 1px black;
+}
+.salesBox .imgcontent .salesbtn {
+    padding: 4px 11px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 7px;
+}
+/*  testimonial */
+.carousel-control-prev {
+    left: 54px;
+    top: -65px;
+}
+.carousel-control-next {
+    right: 54px;
+    top: -65px;
+}
+.sliderImg {
+    width: 30%;
+    height: 15vh;
+}
+.slide-content p {
+    font-size: 11px;
+}
+
+
+
+
+}
+
+@media (max-width: 430px){
+  /* hero part2 */
+  .carousel-item .img2 {
+    left: -465px;
+    position: relative;
+    width: 209vw !important;
+    height: 80vh;
+    object-fit: cover;
+    }
+
+/* part 3 */
+    .carousel-item .img3 {
+        left: -285px;
+    }
+    .hero-content3 {
+        position: relative;
+        bottom: 466px;
+        left: 34px;
+        max-width: 51%;
+    }
+    .hero-content3 h1 {
+        font-size: 35px;
+        font-weight: 300;
+    }
+    .hero-content3 .btn {
+        background-color: #f9a629;
+        padding: 4px 16px;
+        font-size: 12px;
+        font-weight: 800;
+    }
+
+/*  customer info */
+.customer-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, auto));
+    gap: 1.5rem;
+    
+}
+
+/*  new arrivale */
+.newArrivals .newAriContent {
+    width: 45%;
+}
+.newArrivals{
+    
+    position: relative;
+    left: -215px;
+    width: 160vw;
+    height: 100vh;
+
+    
+ }
+ .newArrivals .newAriContent {
+    width: 33%;
+    position: relative;
+    right: 58px;
+    top: -10px;
+}
+.newArrivals .newAriContent h1 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.newArrivals .newAriContent p {
+    font-size: 10px;
+    color: gray;
+}
+.newArrivals .newAriContent .arriBtn {
+    padding: 5px 20px;
+    font-size: 9px;
+}
+
+
+}
+
+
+@media (max-width: 425px) {
+    .main-heading {
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-bottom: 38px;
+    }
+   
+    /*  navbar */
+    .navbar>.container-fluid {
+        display: flex !important;
+        /* flex-direction: column; */
+        flex-wrap: nowrap !important;
+        align-items: center;
+        justify-content: center;
+    }
+    .container-fluid {
+        padding: 0px 20px;
+        height: 8vh;
+
+    }
+    .navbar .container-fluid a img {
+        width: 37%;
+    }
+    /* hero section */
+
+    .carousel-item .img1{
+        left: -309px;
+        position: relative;
+        width: 175vw !important;
+        height: 80vh;
+        object-fit: none;
+    }
+    .hero-content {
+        position: relative;
+        bottom: 185px;
+        text-align: center;
+        left: 83px;
+        width: 66%;
+    }
+    .hero-content h5 {
+        font-size: 10px;
+        font-weight: 500;
+    }
+    .hero-content h1 {
+        font-size: 19px;
+    }
+    .hero-content p {
+        font-size: 7px;
+        font-weight: 400;
+    }
+    .hero-content .btn {
+        font-size: 10px;
+        padding: 0px 12px;
+    }
+/*  hero part 2 */
+.carousel-item .img2 {
+    left: -234px;
+    position: relative;
+    width: 160vw !important;
+    height: 80vh;
+    object-fit: cover;
+}
+
+.hero-content2 {
+    position: relative;
+    bottom: 277px;
+    width: 50%;
+    left: 27px;
+    text-align: center;
+}
+.hero-content2 h1 {
+    font-size: 20px;
+    font-weight: 800;
+}
+.hero-content2 p {
+    font-size: 17px;
+    font-weight: 200;
+    letter-spacing: 6px;
+}
+
+.hero-content2 span {
+    font-size: 6px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    color: gray;
+    position: relative;
+    top: -11px;
+}
+.hero-content2 .btn {
+    background-color: #f9a629;
+    padding: 4px 28px;
+    font-size: 10px;
+    font-weight: 800;
+    margin-top: 12px;
+}
+/* hero part 3 */
+.carousel-item .img3 {
+    left: -300px;
+    position: relative;
+    width: 230vw !important;
+    
+}
+.hero-content3 {
+    position: relative;
+    bottom: 265px;
+    left: 22px;
+    max-width: 55%;
+}
+.hero-content3 h1 {
+    font-size: 30px;
+    font-weight: 300;
+}
+.hero-content3 .btn {
+    background-color: #f9a629;
+    padding: 4px 20px;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+/*  customer info */
+.customer-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, auto));
+    gap: 1.5rem;
+    
+}
+.box-item {
+    position: relative;
+    box-shadow: 0px 0px 4px 1px black;
+    padding: 35px 20px;
+    /* left: 67px; */
+    /* border: none; */
+    width: 73vw;
+}
+/*  new arrivale */
+.newArrivals .newAriContent {
+    width: 45%;
+}
+.newArrivals{
+    
+    position: relative;
+    left: -215px;
+    width: 160vw;
+    height: 100vh;
+
+    
+ }
+ .newArrivals .newAriContent {
+    width: 33%;
+    position: relative;
+    right: 58px;
+    top: -10px;
+}
+.newArrivals .newAriContent h1 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.newArrivals .newAriContent p {
+    font-size: 10px;
+    color: gray;
+}
+.newArrivals .newAriContent .arriBtn {
+    padding: 5px 20px;
+    font-size: 9px;
+}
+
+/* sales box */
+.salesBox .imgcontent h1 {
+    font-size: 27px;
+    text-shadow: 2px 6px 1px black;
+}
+.salesBox .imgcontent .salesbtn {
+    padding: 4px 12px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 7px;
+}
+
+/*  testimonial */
+.slide-content {
+    position: absolute;
+    bottom: -11px;
+    color: black;
+}
+.carousel-control-prev {
+    left: 46px;
+    top: -80px;
+}
+.carousel-control-next {
+    right: 50px;
+    top: -80px;
+}
+.sliderImg {
+    width: 42%;
+    height: 18vh;
+}
+.slide-content h5 {
+    font-size: 1.2rem;
+}
+.slide-content span {
+    font-size: 11px;
+    color: gray;
+}
+.slide-content p {
+    font-size: 11px;
+}
+
+/*  mail box */
+.mailInputbox {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    text-align: center;
+    
+}
+.mailContent {
+    text-align: center;
+}
+
+    
+    
+    
+    
+}
+@media (max-width: 375px) {
+    /* navbar */
+    .navbar .container-fluid a img {
+        width: 45%;
+    }
+    /*  hero section */
+    .carousel-item .img1{
+        left: -282px;
+    }
+    .hero-content {
+        left: 71px;
+
+
+    }
+
+    /* hero part2 */
+    .carousel-item .img1{
+        left: -222px;
+    }
+   
+    .hero-content2 h1 {
+        font-size: 19px;
+        font-weight: 800;
+    }
+    .hero-content2 p {
+        font-size: 15px;
+        font-weight: 200;
+        letter-spacing: 6px;
+    }
+    .hero-content2 span {
+        font-size: 5px;
+        letter-spacing: 3px;
+        font-weight: 500;
+        color: gray;
+        position: relative;
+        top: -11px;
+    }
+    .hero-content2 .btn {
+        background-color: #f9a629;
+        padding: 4px 28px;
+        font-size: 10px;
+        font-weight: 800;
+        margin-top: 12px;
+    }
+
+
+    .hero-content3 h1 {
+        font-size: 25px;
+        font-weight: 300;
+    }
+
+
+   /*  new Arrivale */
+    .newArrivals .newAriContent {
+        
+        right: 13px;
+        top: -10px;
+    }
+
+
+    /* sales box */
+    .salesBox .imgcontent h1 {
+        font-size: 24px;
+        text-shadow: 2px 6px 1px black;
+    }
+    .salesBox .imgcontent .salesbtn {
+        padding: 1px 9px;
+        font-size: 12px;
+        font-weight: 500;
+        border-radius: 7px;
+    }
+   /*  testimonial */
+   .slide-content {
+    position: absolute;
+    bottom: -13px;
+    color: black;
+}
+   .sliderImg {
+    width: 40%;
+    height: 16vh;
+}
+
+/*  mail box */
+
+.mailContent h2 {
+    font-size: 0.9rem;
+    font-weight: 800;
+}
+.mailContent p {
+    font-size: 9px;
+}
+.mailInputbox input {
+    padding: 3px 0px;
+}
+.mailInputbox .mailbtn {
+    padding: 0px 9px;
+    font-size: 12px;
+}
+
+
+    
+    
+}
+@media (max-width: 320px) {
+
+    /* hero section */
+    .carousel-item .img1{
+        left: -232px;
+       
+    }
+    .hero-content {
+        position: relative;
+        bottom: 160px;
+        text-align: center;
+        left: 54px;
+        width: 65%;
+    }
+    .hero-content h5 {
+        font-size: 11px;
+        font-weight: 500;
+    }
+    .hero-content h1 {
+        font-size: 22px;
+    }
+    .hero-content p {
+        font-size: 8px;
+        font-weight: 400;
+    }
+    .hero-content .btn {
+        font-size: 10px;
+        padding: 0px 12px;
+    }
+   /* hero part2 */
+   .carousel-item .img2 {
+    left: -190px;
+    
+}
+.hero-content2 {
+    position: relative;
+    bottom: 277px;
+    width: 50%;
+    left: 27px;
+    text-align: center;
+}
+.hero-content2 h1 {
+    font-size: 17px;
+    font-weight: 800;
+}
+.hero-content2 p {
+    font-size: 15px;
+    font-weight: 200;
+    letter-spacing: 6px;
+}
+.hero-content2 span {
+    font-size: 8px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    color: gray;
+    position: relative;
+    top: -11px;
+}
+.hero-content2 .btn {
+    background-color: #f9a629;
+    padding: 5px 11px;
+    font-size: 10px;
+    font-weight: 800;
+    margin-top: 12px;
+}
+
+/*  hero part 3 */
+.hero-content3 {
+    position: relative;
+    bottom: 265px;
+    left: 22px;
+    max-width: 55%;
+}
+.hero-content3 h1 {
+    font-size: 26px;
+    font-weight: 300;
+}
+.hero-content3 .btn {
+    background-color: #f9a629;
+    padding: 2px 15px;
+    font-size: 9px;
+    font-weight: 800;
+}
+
+
+   /*  new arrivals */
+.newArrivals {
+    position: relative;
+    left: -215px;
+    width: 175vw;
+    height: 100vh;
+}
+.newArrivals .newAriContent {
+    right: 24px;
+    top: -25px;
+    width: 26%;
+}
+.newArrivals .newAriContent h1 {
+    font-size: 21px;
+    font-weight: 700;
+}
+.newArrivals .newAriContent p {
+    font-size: 9px;
+    color: gray;
+}
+.newArrivals .newAriContent .arriBtn {
+    padding: 5px 14px;
+    font-size: 7px;
+}
+    /*  testimonial */
+    .carousel-control-next {
+        right: 30px;
+        top: -45px;
+    }
+    .carousel-control-prev {
+        left: 30px;
+        top: -45px;
+    }
+    .slide-content p {
+        font-size: 10px;
+    }
+    /*  mail box */
+    .mailInputbox input {
+        padding: 0px 0px;
+    }
+    .mailInputbox .mailbtn {
+        padding: 0px 8px;
+        font-size: 9px;
+    }
+    
+}
+
+
+/* card reponsive  */
+
+@media (max-width: 1080px){
+    section{
+        padding: 3rem 0 2rem;
+    }
+    .shop{
+        margin-top: 2rem !important;
+    }
+}
+
+@media (max-width: 400px){
+    .cart{
+        width: 320px;
+    }
+}
+@media (max-width: 360px){
+    .shop{
+        margin-top: 1rem !important;
+    }
+    .cart{
+        width: 280px;
+    }
+}
+
+
+
+

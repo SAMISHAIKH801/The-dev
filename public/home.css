@@ -1,0 +1,197 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Baloo Bhaijaan 2", sans-serif; */
+    font-family: "Poppins", sans-serif;
+
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    list-style-type: none;
+    text-decoration: none;
+}
+html, body {
+    overflow-x: hidden; /* Right-left scrolling ko eliminate karne ke liye */
+}
+
+
+
+.navbar {
+    background: whitesmoke;
+}
+
+.navbar .container{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px;
+    
+}
+.container a{
+font-size: 25px;
+font-weight: 700;
+}
+.container a:hover{
+color: #ff4900;
+text-decoration: underline;
+}
+/* .commentbox{
+    border: 2px solid black;
+    width: 50%;
+    border-radius: 12px;
+    margin: 1rem;
+
+}
+
+
+.card-post{
+    border: 2px solid black;
+    width: 50%;
+    margin: 11px;
+    padding: 20px;
+    border-radius: 13px;
+    
+} */
+
+.form-box{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 112vh;
+    margin: 0;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 508px;
+    height: 111vh;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.mr-hight {
+    margin-bottom: -16px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff4900;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #ff743d;
+}
+
+.img-box {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.img-box label {
+    background-color: #28a745;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.img-box input[type="file"] {
+    display: none;
+}
+
+.bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.progress {
+    width: 0;
+    height: 20px;
+    background-color: #28a745;
+}
+
+.progressPercentage {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+.imgUploaded {
+    margin-top: 20px;
+}
+
+.imgUploaded img {
+    max-width: 10%;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+
+/* cards box */
+
+
+.shop-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    gap: 1.5rem;
+}
+.product-box{
+    position: relative;
+    box-shadow: 0px 0px 4px 1px black;
+    padding: 3px 9px;
+}
+.product-box:hover{
+    padding: 10px;
+    border: 1px solid black;
+    transition: 0.8s;
+}
+.product-img{
+    width: 100%;
+    /* height: auto; */
+    height: 75%;
+
+    margin-bottom: 0.5rem;
+}
+.product-title{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+.price{
+    font-weight: 500;
+}
